@@ -3,6 +3,13 @@ var Vehicle = (function() {
     function Vehicle() {
     };
 
+    Vehicle.prototype = {
+        travel: function() {
+            return "Goodbye";
+        },
+        moves: true
+    }
+
     return Vehicle;
 })();
 
@@ -42,6 +49,10 @@ var Train = (function() {
 
     Train.prototype = Object.create(LandVehicle.prototype);
 
+    Train.prototype.leaveStation = function() {
+        return "choo choo";
+    }
+
     return Train;
 })();
 
@@ -54,6 +65,10 @@ var SeaVessel = (function() {
     };
 
     SeaVessel.prototype = Object.create(Vehicle.prototype);
+
+    SeaVessel.prototype.setSail = function() {
+        return "ahoy";
+    }
 
     return SeaVessel;
 })();
@@ -100,7 +115,6 @@ var Plane = (function() {
 
 
 var extendee = {name: "becky", has_headache: "true"};
-
 var extended = _.extend({}, extendee);
 
 

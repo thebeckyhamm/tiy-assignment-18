@@ -35,6 +35,10 @@ describe("Extending Constructors", function() {
     expect(car).to.not.be.instanceof(Aircraft);
     expect(train).to.be.instanceof(LandVehicle);
     expect(train).to.be.instanceof(Vehicle);
+    expect(boat.travel()).eq("Goodbye");
+    expect(boat.setSail()).eq("ahoy");
+    expect(train.leaveStation()).eq("choo choo");
+    expect(car.moves).eq(true);
 
   });
 
