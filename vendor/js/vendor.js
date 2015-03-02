@@ -11628,7 +11628,7 @@ if (typeof exports == "object") {
 } else {
   (this || window)["chai"] = require("chai");
 }
-})()
+})();
 
 //     Underscore.js 1.8.2
 //     http://underscorejs.org

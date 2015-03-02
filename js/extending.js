@@ -43,7 +43,6 @@ var Train = (function() {
     Train.prototype = Object.create(LandVehicle.prototype);
 
     return Train;
-
 })();
 
 
@@ -57,7 +56,6 @@ var SeaVessel = (function() {
     SeaVessel.prototype = Object.create(Vehicle.prototype);
 
     return SeaVessel;
-
 })();
 
 
@@ -71,7 +69,6 @@ var Boat = (function() {
     Boat.prototype = Object.create(SeaVessel.prototype);
 
     return Boat;
-
 })();
 
 
@@ -85,7 +82,6 @@ var Aircraft = (function() {
     Aircraft.prototype = Object.create(Vehicle.prototype);
 
     return Aircraft;
-
 })();
 
 
@@ -99,6 +95,24 @@ var Plane = (function() {
     Plane.prototype = Object.create(Aircraft.prototype);
 
     return Plane;
-
 })();
+
+
+
+var extendee = {name: "becky", has_headache: "true"};
+
+var extended = _.extend({}, extendee);
+
+
+var params = function(options) {
+
+    var defaults = {
+        location: "TIY",
+        smelly: true,
+        quiet: false,
+        page: 1
+    }
+
+    return _.extend({}, defaults, options);
+};
 
