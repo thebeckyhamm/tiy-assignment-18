@@ -1,0 +1,25 @@
+{
+  "name": "tiy-assignment-18",
+  "version": "0.0.0",
+  "authors": [
+    "Becky Hamm <becky@metricslice.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~2.1.0",
+    "underscore": "~1.8.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~2.1.0"
+  }
+}

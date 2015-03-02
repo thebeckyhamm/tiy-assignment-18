@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing TIY Assignment 18</title>
+    <link rel="stylesheet" href="../vendor/css/vendor.css" />
+</head>
+<body>
+
+<div id="mocha"></div>
+    <script src="../vendor/js/vendor.js"></script>
+
+    <script src="../js/extending.js"></script>
+
+    <script>mocha.setup('bdd')</script>
+
+    <script src="test.extending.js"></script>
+    <script>
+        var expect = chai.expect;
+
+        mocha.checkLeaks();
+        mocha.globals("_");
+        mocha.run();
+    </script>
+    
+</body>
+</html>
